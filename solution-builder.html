@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<title>Cisco DNA Solution Builder</title>
+</head>
+
+<!-- Application code starts here -->
+<body style="margin: 0; padding: 0;">
+<link href="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/css/tn_microsite.css" rel="stylesheet" />
+<link href="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/css/tn_microsite_single.css" rel="stylesheet" />
+<link href="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/css/tn_microsite_responsive.css" rel="stylesheet" />
+<link href="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/css/cisco-sans_min.css" rel="stylesheet" />
+<div class="tn_container">
+	<div class="tn_subheadBar d-none" id="app-header">
+		<div class="tn_content">
+			<h2 id="header-title"></h2>
+			<div class="tn_subheadButtonArray">
+				<div class="tn_subheadButton d-none subhead-watch"><a href="#" target="_blank" class="tn_capsuleButton tn_capsuleButtonOpen" data-config-metrics-group="Watch a live demo" id="watch-a-live-demo-top"></a></div>
+				<div class="tn_subheadButton d-none subhead-download"><a href="#" class="tn_capsuleButton tn_capsuleButtonOpen" data-config-metrics-group="Download PDF" id="download-pdf-top"></a></div>
+				<div class="tn_subheadButton tn_contactCiscoWidget drop">
+					<a href="#" class="tn_contactCiscoButton drop-toggle" id="contact-cutton"><span class="tn_contactIcon"></span><span class="contact-button-text"></span><span class="tn_contactArrow"></span></a>
+					<div class="tn_contactCiscoDropDown">
+						<ul id="drop-menu">
+						</ul>
+					</div><!--/tn_contactCiscoDropDown-->
+				</div><!--/tn_contactCiscoWidget-->
+			</div><!--/tn_subheadButtonArray-->
+		</div><!--/tn_content-->
+	</div><!--/tn_subheadBar-->
+	<div class="tn_splash" id="app-splash">
+		<h1 id="splash-title"></h1>
+		<hr>
+		<div class="loader2">
+			<div class="animation_container" style="background-color:rgba(242, 242, 242, 0.00); width:80px; height:140px">
+				<canvas class="canvas" width="80" height="140" style="position: absolute; display: block; background-color:rgba(242, 242, 242, 0.00);"></canvas>
+				<div class="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:80px; height:140px; position: absolute; left: 0px; top: 0px; display: block;">
+				</div>
+			</div>
+		</div>
+		<!-- /.loader -->
+		<div class="tn_splashMultiple_content">
+			<ul class="tn_splashSolutionsArray">
+				<li><img src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/images/results_icon_solution_assurance.png" alt="Assurance"><br><span class="splash-assurance"></span></li>
+				<li><img src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/images/results_icon_solution_automation.png" alt="Automation"><br><span class="splash-automation"></span></li>
+				<li><img src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/images/results_icon_solution_sdaccess.png" alt="SD-Access"><br><span class="splash-sdaccess"></span></li>
+				<li><img src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/images/results_icon_solution_sdwan.png" alt="SD-WAN"><br><span class="splash-sdwan"></span></li>
+			</ul>
+			<hr>
+			<div class="splash-text"></div>
+			<div class="tn_splashButton tn_group">
+				<a href="#" class="tn_capsuleButton tn_capsuleButtonSolid splash-button" data-config-metrics-group="Get started"></a>
+			</div>
+		</div>
+		<!-- /.tn_splashMultiple_content -->
+		<div class="tn_splashSingle_content">
+			<div class="tn_splashSingle tn_group">
+				<div class="tn_splashSingleIcon"><img src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/images/results_icon_solution_sdwan.png" alt=""></div>
+				<div class="tn_splashSingleCopy"><div class="splash-text"></div><div class="tn_splashButton tn_group"><a href="#" class="tn_capsuleButton tn_capsuleButtonSolid splash-button" data-config-metrics-group="Get started"></a></div></div>
+			</div>
+		</div>
+		<!-- /.tn_splashSingle_content -->
+		<hr>
+		<ul class="tn_splashSingleMenu">
+			<li class="splash-menu-assurance"><a href="#assurance"></a></li>
+			<li class="splash-menu-automation"><a href="#automation"></a></li>
+			<li class="splash-menu-sd-access"><a href="#sd-access"></a></li>
+			<li class="splash-menu-sd-wan"><a href="#sd-wan"></a></li>
+			<li class="splash-menu-all singleMenuSelected"><a href="#all"></a></li>
+		</ul>
+	</div>
+	<!--/tn_splash-->
+	<div class="tn_mainToolContent d-none" id="app-question-1">
+		<div class="tn_content">
+			<h2 id="question-step-1-title"></h2>
+			<div class="tn_colorBar tn_group">
+				<div class="tn_colorBarSection1"></div>
+				<div class="tn_colorBarSection2"></div>
+				<div class="tn_colorBarSection3"></div>
+				<div class="tn_colorBarSection4"></div>
+			</div>
+			<div class="tn_answerBlock tn_group">
+				<div id="question-1" class="question-1-grid"></div>
+			</div><!--tn_group-->
+			<hr>
+			<div class="tn_progressButtonArray tn_group">
+				<a href="#" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonLeft" id="start-over" data-config-metrics-group="Start over"></a>
+				<a href="#" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonRight text-next tn_capsuleButtonGrayedOut" id="go-step-2" data-config-metrics-group="Next"></a>
+			</div><!--/tn_group-->
+		</div><!--/tn_content-->
+	</div><!--/tn_mainToolContent-->
+	<div class="tn_mainToolContent d-none" id="app-question-2">
+		<div class="tn_content">
+			<p class="tn_questionID">One more question...</p>
+			<h2 id="question-step-2-title"></h2>
+			<div class="tn_colorBar tn_group">
+				<div class="tn_colorBarSection1"></div>
+				<div class="tn_colorBarSection2"></div>
+				<div class="tn_colorBarSection3"></div>
+				<div class="tn_colorBarSection4"></div>
+			</div>
+			<div class="tn_answerBlock tn_group">
+				<div id="question-2"></div>
+			</div><!--tn_answerBlock-->
+			<hr>
+			<div class="tn_progressButtonArray tn_group">
+				<a href="#" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonLeft" id="back-to-1" data-config-metrics-group="Back"></a>
+				<a href="#" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonRight" id="finish" data-config-metrics-group="Finish"></a>
+			</div><!--/tn_group-->
+		</div><!--/tn_content-->
+	</div><!--/tn_mainToolContent-->
+	<div class="tn_mainToolContent d-none" id="app-result">
+
+		<div id="pdfFooter" class="d-none"></div>
+
+		<div class="loader">
+			<div class="animation_container" style="background-color:rgba(242, 242, 242, 0.00); width:80px; height:140px">
+				<canvas class="canvas" width="80" height="140" style="position: absolute; display: block; background-color:rgba(242, 242, 242, 0.00);"></canvas>
+				<div class="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:80px; height:140px; position: absolute; left: 0px; top: 0px; display: block;">
+				</div>
+			</div>
+		</div>
+		<!-- /.loader -->
+
+		<div class="tn_content tn_content-loader">
+
+			<h1 id="result-title"></h1>
+			<p class="tn_resultsIntro"></p>
+			<ul class="tn_resultsIntroSolutions">
+			</ul>
+			<div class="tn_colorBar tn_group">
+				<div class="tn_colorBarSection1"></div>
+				<div class="tn_colorBarSection2"></div>
+				<div class="tn_colorBarSection3"></div>
+				<div class="tn_colorBarSection4"></div>
+			</div>
+
+			<div class="tn_mainWrap">
+
+				<div class="tn_resultsSection tn_resultsSoftware d-none">
+					<div class="tn_resultsSectionHeader">
+						<h3></h3>
+					</div><!--/tn_resultsSectionheader-->
+					<div class="tn_resultsContentArea">
+						<div id="r1-intro"></div>
+						<hr>
+						<ul class="tn_resultsArray">
+						</ul><!--tn_resultsArray-->
+						<hr>
+						<div id="r1-disclaim">
+						</div>
+					</div><!--/tn_resultsContentArea-->
+				</div><!--/tn_resultsSection-->
+
+				<div class="tn_resultsSection tn_resultsAppliance d-none">
+					<div class="tn_resultsSectionHeader">
+						<h3></h3>
+					</div><!--/tn_resultsSectionheader-->
+					<div class="tn_resultsContentArea">
+					</div><!--/tn_resultsContentArea-->
+				</div><!--/tn_resultsSection-->
+
+				<div class="tn_resultsSection tn_resultsInfrastructure d-none">
+					<div class="tn_resultsSectionHeader">
+						<h3></h3>
+					</div><!--/tn_resultsSectionheader-->
+					<div class="tn_resultsContentArea">
+						<ul class="tn_resultsArray">
+						</ul><!--tn_resultsArray-->
+						<hr>
+						<div id="r3-disclaim"></div>
+					</div><!--/tn_resultsContentArea-->
+				</div><!--/tn_resultsSection-->
+
+				<div class="tn_resultsSection tn_resultsServices d-none">
+					<div class="tn_resultsSectionHeader">
+						<h3></h3>
+					</div><!--/tn_resultsSectionheader-->
+					<div class="tn_resultsContentArea">
+					</div><!--/tn_resultsContentArea-->
+				</div><!--/tn_resultsSection-->
+
+			</div>
+
+			<div class="tn_progressButtonArray tn_group">
+				<a href="#" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonLeft" id="back-to-2" data-config-metrics-group="Back"></a>
+				<a href="#" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonRight" id="start-over2" data-config-metrics-group="Start over"></a>
+				<div class="tn_CTAButtonArrayBottom">
+					<span class="subhead-watch subhead-watch-2"><a href="#" target="_blank" class="tn_capsuleButton tn_capsuleButtonOpen" data-config-metrics-group="Register for demo" id="register-for-demo-bottom"></a></span>
+					<span class="subhead-download"><a href="#" class="tn_capsuleButton tn_capsuleButtonOpen" data-config-metrics-group="Download PDF" id="download-pdf-bottom"></a></span>
+				</div>
+			</div><!--/tn_group-->
+
+		</div><!--/tn_content-->
+	</div><!--/tn_mainToolContent-->
+	<div class="tn_lightBoxOverlay d-none"></div>
+	<div class="tn_lightBoxWindow tn_lightBoxWindowProduct d-none">
+		<a class="tn_closeX"></a>
+		<div class="tn_lightBoxWindowProduct-wrap">
+			<div class="tn_lightBoxProductImage d-none" id="modal-photo">
+			</div>
+			<div class="tn_lightBoxProductContent">
+				<h3 id="modal-title"></h3>
+				<div id="modal-content"></div>
+				<a href="#" target="_blank" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonLeft d-none button-m-1" id="button-m-1"></a>
+				<a href="#" target="_blank" class="tn_capsuleButton tn_capsuleButtonSolid tn_capsuleButtonLeft d-none button-m-2" id="button-m-2"></a>
+			</div>
+		</div>
+	</div>
+	<div class="tn_lightBoxWindow tn_lightBoxWindowAnswers d-none">
+		<a class="tn_closeX"></a>
+		<div class="tn_lightBoxAnswersContent">
+			<h2 id="answers-title"></h2>
+			<hr>
+			<div class="tn_lightBoxAnswersContentColumn">
+				<h3 id="answers-q1-title"></h3>
+				<ul id="answers-q1-result">
+				</ul>
+			</div><!--/tn_lightBoxAnswersContentColumn-->
+			<div class="tn_lightBoxAnswersContentColumn">
+				<h3 id="answers-q2-title"></h3>
+				<ul  id="answers-q2-result">
+					<li id="answers-q2-2-title"></li>
+					<ul id="answers-q2-2-result">
+					</ul>
+				</ul>
+			</div><!--/tn_lightBoxAnswersContentColumn-->
+		</div><!--/tn_lightBoxProductContent-->
+	</div><!--/tn_lightBoxWindow-->
+</div><!--/tn_container-->
+<!-- write your code here -->
+
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/dna_loader.js"></script>
+<script src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/jquery.js"></script>
+<script src='../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/jspdf-debug.js'></script>
+<script src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/library.js"></script>
+<script src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/CiscoSansTTRegular-normal.js" type="module"></script>
+<script src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/CiscoSansTTLight-normal.js" type="module"></script>
+<script src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/CiscoSansTTExtraLight-normal.js" type="module"></script>
+<script src="../../../../../c/dam/m/en_us/solutions/enterprise-networks/solution-builder/js/app.js"></script>
+</body>
+<!-- Application code ends here -->
+
+</html>
